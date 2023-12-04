@@ -1,0 +1,48 @@
+\pdfminorversion=4
+\documentclass[11pt,oneside,a4paper]{report}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsfonts,amssymb,graphicx,mathtools,flexisym}
+\usepackage{cancel}
+\usepackage{enumitem}
+\usepackage{palatino}
+\usepackage[skins,theorems]{tcolorbox}
+\usepackage{wrapfig}
+\usepackage{color,xcolor,soul}
+\usepackage[colorlinks=true, allcolors=black]{hyperref}
+
+\def\title{Paper's Title} %% PAPER'S TITLE
+\def\name{Your Name(s)} %% YOUR NAME(S)
+
+%
+% HEADER
+%
+\newcommand{\project}{
+   \pagestyle{myheadings}
+   \thispagestyle{plain}
+   \newpage
+   \setcounter{page}{1}
+   \noindent
+   \begin{center}
+   \begin{tcolorbox}[colback=white,title = {\footnotesize EEE 448/548: Reinforcement Learning \& Dynamic Programming \hfill Fall 2023},width=\textwidth]
+       \vspace{4mm}
+       \centerline{EEE 448/548 - Project Report}
+       \vspace{4mm}
+       \centerline{\Large \title} 
+       \vspace{2mm}
+       \centerline{\name} 
+       \vspace{4mm}
+       \end{tcolorbox}
+          \end{center}
+}
+
+
+\begin{document}
+\project
+\vspace{.1in}
+%
+% YOUR REPORT
+%
+The report goes here...
+
+\end{document}
